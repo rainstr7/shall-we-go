@@ -262,3 +262,6 @@ yarn-error.log*
 next-env.d.ts
 /WARP.md
 /IMPORT_GUIDE.md
+
+# Sensitive files
+cookies.txt
