@@ -1,0 +1,119 @@
+{
+  "common": {
+    "loading": "Загрузка...",
+    "error": "Ошибка",
+    "success": "Успешно",
+    "cancel": "Отмена",
+    "confirm": "Подтвердить",
+    "save": "Сохранить",
+    "delete": "Удалить",
+    "edit": "Редактировать",
+    "close": "Закрыть",
+    "next": "Далее"
+  },
+  "auth": {
+    "login": "Войти",
+    "logout": "Выйти",
+    "register": "Регистрация",
+    "loginTitle": "Вход",
+    "registerTitle": "Регистрация",
+    "loginPlaceholder": "Логин",
+    "passwordPlaceholder": "Пароль",
+    "emailPlaceholder": "Email",
+    "namePlaceholder": "Имя",
+    "birthdatePlaceholder": "дд/мм/гг",
+    "welcomeSubtitle": "Зарегистрируйтесь сегодня бесплатно!",
+    "noAccount": "Нет аккаунта?",
+    "hasAccount": "Уже есть аккаунт?",
+    "signUp": "Зарегистрироваться",
+    "continue": "Продолжить",
+    "signIn": "Войти",
+    "nameLabel": "Имя",
+    "loginLabel": "Логин",
+    "emailLabel": "Email",
+    "birthdateLabel": "Дата рождения",
+    "passwordLabel": "Пароль",
+    "validation": {
+      "required": "Поле обязательно для заполнения",
+      "loginRequired": "Логин обязателен",
+      "passwordRequired": "Пароль обязателен",
+      "emailRequired": "Email обязателен",
+      "nameRequired": "Имя обязательно",
+      "birthdateRequired": "Дата рождения обязательна",
+      "minLength": "Минимум {{count}} символов",
+      "loginMinLength": "Логин должен содержать минимум {{count}} символа",
+      "passwordMinLength": "Пароль должен содержать минимум {{count}} символов",
+      "nameMinLength": "Имя должно содержать минимум {{count}} символа",
+      "invalidEmail": "Некорректный email адрес",
+      "invalidBirthdate": "Некорректная дата рождения",
+      "nameTooLong": "Имя слишком длинное",
+      "emailTooLong": "Email слишком длинный",
+      "passwordTooLong": "Пароль слишком длинный",
+      "passwordMustContainLetters": "Пароль должен содержать буквы",
+      "passwordMustContainNumbers": "Пароль должен содержать цифры"
+    },
+    "errors": {
+      "invalidCredentials": "Неверные данные для входа",
+      "loginFailed": "Ошибка входа",
+      "registrationFailed": "Ошибка регистрации",
+      "networkError": "Ошибка сети",
+      "unknownError": "Неизвестная ошибка"
+    },
+    "messages": {
+      "loginSuccess": "Вход выполнен успешно",
+      "logoutSuccess": "Выход выполнен успешно",
+      "registrationSuccess": "Регистрация прошла успешно"
+    }
+  },
+  "events": {
+    "title": "События",
+    "createEvent": "Создать событие",
+    "noEvents": "Нет событий",
+    "eventDetails": "Детали события",
+    "participants": "Участники",
+    "date": "Дата",
+    "time": "Время",
+    "location": "Место",
+    "description": "Описание"
+  },
+  "navigation": {
+    "home": "Главная",
+    "events": "События",
+    "profile": "Профиль",
+    "settings": "Настройки"
+  },
+  "menu": {
+    "editProfile": "РЕДАКТИРОВАТЬ ПРОФИЛЬ",
+    "home": "Главная",
+    "matches": "Совпадения",
+    "game": "Игра",
+    "dates": "Свидания",
+    "picks": "Выборы",
+    "settings": "Настройки",
+    "signOut": "Выйти",
+    "signingOut": "Выход...",
+    "goPremium": "ПРЕМИУМ"
+  },
+  "interests": {
+    "title": "Мои интересы",
+    "description": "Выберите несколько своих интересов и покажите всем, что вас увлекает.",
+    "items": {
+      "movies": "Фильмы",
+      "cooking": "Кулинария",
+      "bookNerd": "Книжный червь",
+      "musicEnthusiast": "Меломан",
+      "videoGames": "Видеоигры",
+      "traveling": "Путешествия",
+      "boating": "Катание на лодках",
+      "athlete": "Спорт",
+      "gambling": "Азартные игры",
+      "technology": "Технологии",
+      "swimming": "Плавание",
+      "shopping": "Шопинг",
+      "videography": "Видеосъёмка",
+      "art": "Искусство",
+      "design": "Дизайн",
+      "photography": "Фотография"
+    }
+  }
+}

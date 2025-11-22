@@ -1,0 +1,120 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "next": "Next",
+    "prev": "Back"
+  },
+  "auth": {
+    "login": "Login",
+    "logout": "Logout",
+    "register": "Register",
+    "loginTitle": "Login",
+    "registerTitle": "Register",
+    "loginPlaceholder": "Login",
+    "passwordPlaceholder": "Password",
+    "emailPlaceholder": "Email",
+    "namePlaceholder": "Name",
+    "birthdatePlaceholder": "dd/mm/yy",
+    "welcomeSubtitle": "Sign up today for free!",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "signUp": "Sign Up",
+    "continue": "Continue",
+    "signIn": "Sign In",
+    "nameLabel": "Name",
+    "loginLabel": "Login",
+    "emailLabel": "Email",
+    "birthdateLabel": "Birthdate",
+    "passwordLabel": "Password",
+    "validation": {
+      "required": "Field is required",
+      "loginRequired": "Login is required",
+      "passwordRequired": "Password is required",
+      "emailRequired": "Email is required",
+      "nameRequired": "Name is required",
+      "birthdateRequired": "Birthdate is required",
+      "minLength": "Minimum {{count}} characters",
+      "loginMinLength": "Login must contain at least {{count}} characters",
+      "passwordMinLength": "Password must contain at least {{count}} characters",
+      "nameMinLength": "Name must contain at least {{count}} characters",
+      "invalidEmail": "Invalid email address",
+      "invalidBirthdate": "Invalid birthdate",
+      "nameTooLong": "Name is too long",
+      "emailTooLong": "Email is too long",
+      "passwordTooLong": "Password is too long",
+      "passwordMustContainLetters": "Password must contain letters",
+      "passwordMustContainNumbers": "Password must contain numbers"
+    },
+    "errors": {
+      "invalidCredentials": "Invalid credentials",
+      "loginFailed": "Login failed",
+      "registrationFailed": "Registration failed",
+      "networkError": "Network error",
+      "unknownError": "Unknown error"
+    },
+    "messages": {
+      "loginSuccess": "Login successful",
+      "logoutSuccess": "Logout successful",
+      "registrationSuccess": "Registration successful"
+    }
+  },
+  "events": {
+    "title": "Events",
+    "createEvent": "Create Event",
+    "noEvents": "No Events",
+    "eventDetails": "Event Details",
+    "participants": "Participants",
+    "date": "Date",
+    "time": "Time",
+    "location": "Location",
+    "description": "Description"
+  },
+  "navigation": {
+    "home": "Home",
+    "events": "Events",
+    "profile": "Profile",
+    "settings": "Settings"
+  },
+  "menu": {
+    "editProfile": "EDIT PROFILE",
+    "home": "Home",
+    "matches": "Matches",
+    "game": "Game",
+    "dates": "Dates",
+    "picks": "Picks",
+    "settings": "Settings",
+    "signOut": "Sign Out",
+    "signingOut": "Signing Out...",
+    "goPremium": "GO PREMIUM"
+  },
+  "interests": {
+    "title": "My interests",
+    "description": "Select a few of your interests and let everyone know what you're passionate about.",
+    "items": {
+      "movies": "Movies",
+      "cooking": "Cooking",
+      "bookNerd": "Book Nerd",
+      "musicEnthusiast": "Music Enthusiast",
+      "videoGames": "Video Games",
+      "traveling": "Traveling",
+      "boating": "Boating",
+      "athlete": "Athlete",
+      "gambling": "Gambling",
+      "technology": "Technology",
+      "swimming": "Swimming",
+      "shopping": "Shopping",
+      "videography": "Videography",
+      "art": "Art",
+      "design": "Design",
+      "photography": "Photography"
+    }
+  }
+}

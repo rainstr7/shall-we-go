@@ -1,0 +1,38 @@
+.themeToggle {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  color: var(--color-gray-600);
+  transition: var(--transition-fast);
+}
+
+.themeToggle:hover {
+  background-color: var(--color-gray-100);
+  color: var(--color-gray-800);
+}
+
+.icon {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.size-sm .icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+.size-lg .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+[data-theme="dark"] .themeToggle {
+  color: var(--color-gray-400);
+}
+
+[data-theme="dark"] .themeToggle:hover {
+  background-color: var(--color-dark-700);
+  color: var(--color-gray-200);
+}

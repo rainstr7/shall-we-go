@@ -1,0 +1,9 @@
+.tabs {
+  display: flex;
+  border-bottom: 1px solid var(--color-gray-200);
+  transition: var(--transition-border);
+}
+
+[data-theme="dark"] .tabs {
+  border-color: var(--color-gray-700);
+}

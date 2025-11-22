@@ -1,0 +1,91 @@
+.container {
+  width: 344px;
+  height: 44px;
+  position: relative;
+  margin: 0 auto;
+}
+
+/* Progress indicators container */
+.progressContainer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  position: absolute;
+  left: 0;
+  top: 18px;
+}
+
+/* Small dots for non-current steps */
+.dot {
+  width: 8px;
+  height: 8px;
+  background: #EDEDED;
+  border-radius: 50%;
+}
+
+.dot.completed {
+  background: linear-gradient(242deg, #A776FC 0%, #8239FF 100%);
+}
+
+/* Current step - elongated gradient bar */
+.currentProgress {
+  width: 19px;
+  height: 8px;
+  background: linear-gradient(242deg, #A776FC 0%, #8239FF 100%);
+  border-radius: 25px;
+}
+
+/* Next text */
+.nextText {
+  position: absolute;
+  left: 234px;
+  top: 6px;
+  color: #A776FC;
+  font-size: 22px;
+  font-family: 'Sofia Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+/* Next button */
+.button {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  left: 300px;
+  top: 0;
+  background: linear-gradient(242deg, #A776FC 0%, #8239FF 100%);
+  box-shadow: 0px 10px 55px rgba(253, 193, 201, 0.55);
+  border-radius: 49px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.button:hover:not(.disabled) {
+  transform: scale(1.05);
+  box-shadow: 0px 15px 65px rgba(253, 193, 201, 0.65);
+}
+
+.button:active:not(.disabled) {
+  transform: scale(0.95);
+}
+
+.button.disabled {
+  background: #CCCCCC;
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+/* Arrow inside button */
+.arrow {
+  width: 10.62px;
+  height: 10.62px;
+  border: 2px solid white;
+  border-left: none;
+  border-bottom: none;
+  transform: rotate(45deg);
+}

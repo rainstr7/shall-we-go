@@ -1,0 +1,30 @@
+.container {
+  width: 414px;
+  height: 896px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 40px;
+  margin: 0 auto;
+  background: white;
+}
+
+.stepContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  text-align: center;
+}
+
+.stepContent h1 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+}
+
+.stepContent p {
+  font-size: 16px;
+  color: #666666;
+  margin: 0;
+}

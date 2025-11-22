@@ -1,0 +1,9 @@
+.settingsButton {
+  /* Additional styles specific to settings button if needed */
+  min-width: 120px;
+  transition: var(--transition-medium);
+}
+
+.settingsButton:active {
+  transform: translateY(0);
+}

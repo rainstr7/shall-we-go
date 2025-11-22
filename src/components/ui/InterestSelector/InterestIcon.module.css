@@ -1,0 +1,23 @@
+.icon {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.circle {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid;
+}
+
+.normal {
+  /* Стили управляются Framer Motion */
+}
+
+.selected {
+  /* Стили управляются Framer Motion */
+}

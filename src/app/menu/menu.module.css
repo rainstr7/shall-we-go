@@ -1,0 +1,191 @@
+.menuContainer {
+  width: 414px;
+  height: 896px;
+  background: linear-gradient(46deg, var(--color-primary-gradient-start) 0%, var(--color-primary-gradient-end) 100%);
+  border-radius: var(--border-radius-xl);
+  position: relative;
+  margin: 0 auto;
+  font-family: 'Avenir', sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Profile Section */
+.profileSection {
+  height: 159px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 40px 20px 0;
+}
+
+.profileImage {
+  width: 59px;
+  height: 59px;
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.profileInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.profileName {
+  color: white;
+  font-size: 22px;
+  font-weight: 800;
+  margin: 0;
+  line-height: 1;
+}
+
+.editProfile {
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  opacity: 0.55;
+  margin: 0;
+  line-height: 1;
+}
+
+/* Content Container */
+.contentContainer {
+  flex: 1;
+  display: flex;
+  position: relative;
+}
+
+/* Navigation */
+.navigation {
+  flex: 0 0 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.navItem {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  transition: var(--transition-medium);
+  padding: 10px 0 10px 20px;
+  justify-content: space-between;
+}
+
+.navItem.active {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 0 40px 40px 0;
+  width: 185px;
+}
+
+.navIcon {
+  width: 33px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.navIcon svg {
+  width: 24px !important;
+  height: 24px !important;
+  min-width: 24px;
+  min-height: 24px;
+  max-width: 24px;
+  max-height: 24px;
+  object-fit: contain;
+  display: block;
+}
+
+.navText {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 16px;
+  flex: 1;
+}
+
+/* Inactive state */
+.navItem:not(.active) .navText {
+  opacity: 0.45;
+  transition: var(--transition-opacity);
+}
+
+.navItem:not(.active) .navIcon {
+  color: var(--color-icon-inactive);
+  transition: var(--transition-colors);
+}
+
+/* Active state */
+.navItem.active .navIcon {
+  color: var(--color-icon-active);
+}
+
+/* Hover effects */
+.navItem:not(.active):hover {
+  cursor: pointer;
+}
+
+.navItem:not(.active):hover .navText {
+  opacity: 1;
+}
+
+.navItem:not(.active):hover .navIcon {
+  color: var(--color-icon-active);
+}
+
+/* Loading state */
+.navItem.loading {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.navItem.loading .navIcon {
+  opacity: 0.6;
+}
+
+/* Badge */
+.badge {
+  min-width: 25px;
+  min-height: 25px;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--border-radius-sm);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+}
+
+.badgeText {
+  color: white;
+  font-size: 10px;
+  font-weight: var(--font-weight-black);
+  line-height: 1;
+}
+
+/* Background Image Container */
+.backgroundContainer {
+  flex: 1;
+  position: relative;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: -95px;
+  right: 0;
+  bottom: 80px;
+  left: 0;
+  background-image: url('/images/menu/menu-bg.png');
+  background-size: contain;
+  background-position: center right;
+  background-repeat: no-repeat;
+}
+
+/* Footer button positioning */
+.footerButton {
+  margin: var(--footer-button-margin);
+}

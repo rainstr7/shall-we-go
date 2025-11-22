@@ -1,0 +1,56 @@
+.card {
+  background-color: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  transition: var(--transition-colors);
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gray-800);
+  margin-bottom: 0.5rem;
+  transition: var(--transition-colors);
+}
+
+.description {
+  color: var(--color-gray-600);
+  margin-bottom: 1rem;
+  transition: var(--transition-colors);
+}
+
+.meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  font-size: 0.875rem;
+  color: var(--color-gray-500);
+  transition: var(--transition-colors);
+}
+
+.actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+/* Button styles are now handled by the Button component */
+
+[data-theme="dark"] .card {
+  background-color: var(--color-dark-800);
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3), 0 1px 2px 0 rgba(0, 0, 0, 0.2);
+}
+
+[data-theme="dark"] .title {
+  color: var(--color-gray-100);
+}
+
+[data-theme="dark"] .description {
+  color: var(--color-gray-300);
+}
+
+[data-theme="dark"] .meta {
+  color: var(--color-gray-400);
+}
+
+/* Dark theme button styles are handled by Button component */

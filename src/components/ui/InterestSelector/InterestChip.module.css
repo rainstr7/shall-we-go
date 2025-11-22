@@ -1,0 +1,203 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 14px;
+  padding: 12px 22px;
+  background: var(--color-white);
+  box-shadow: 0px 4px 75px var(--color-chip-shadow-normal);
+  overflow: hidden;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  font-family: var(--font-family-primary);
+}
+
+.chip.selected {
+  background: var(--color-wizard-gradient);
+  box-shadow: 0px 20px 75px var(--color-chip-shadow-selected);
+}
+
+
+.icon {
+  width: 24px;
+  height: 24px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.iconElement {
+  width: 14px;
+  height: 14px;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  border: 2px solid #A776FC;
+  border-radius: 0;
+}
+
+.chip.selected .iconElement {
+  border-color: white;
+}
+
+.iconSmall {
+  width: 4px;
+  height: 4px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  border: 2px solid #A776FC;
+  border-radius: 0;
+}
+
+.chip.selected .iconSmall {
+  border-color: white;
+}
+
+/* Additional elements for selected state */
+.chip.selected .iconElement {
+  width: 16px;
+  height: 16px;
+  left: 4px;
+  top: 4px;
+}
+
+.chip.selected .iconSmall {
+  left: 13px;
+  top: 9px;
+}
+
+.iconDot1 {
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  background: white;
+  display: none;
+}
+
+.iconDot2 {
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 7px;
+  top: 11px;
+  background: white;
+  display: none;
+}
+
+.iconDot3 {
+  width: 2px;
+  height: 2px;
+  position: absolute;
+  left: 6px;
+  top: 14px;
+  background: white;
+  display: none;
+}
+
+.chip.selected .iconDot1,
+.chip.selected .iconDot2,
+.chip.selected .iconDot3 {
+  display: block;
+}
+
+.label {
+  color: var(--color-wizard-text-muted);
+  font-size: 16px;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-heavy);
+  word-wrap: break-word;
+  transition: var(--transition-colors);
+}
+
+.chip.selected .label {
+  color: var(--color-white);
+}
+
+/* Icon styles for different interest types */
+.movies {
+  background: linear-gradient(135deg, #FF6B6B, #FF8787);
+}
+
+.cooking {
+  background: linear-gradient(135deg, #4ECDC4, #44A08D);
+}
+
+.book {
+  background: linear-gradient(135deg, #A8E6CF, #7FCDCD);
+}
+
+.music {
+  background: linear-gradient(135deg, #FFD93D, #6BCF7F);
+}
+
+.games {
+  background: linear-gradient(135deg, #6C5CE7, #A29BFE);
+}
+
+.travel {
+  background: linear-gradient(135deg, #FD79A8, #FDCB6E);
+}
+
+.boat {
+  background: linear-gradient(135deg, #74B9FF, #0984E3);
+}
+
+.sport {
+  background: linear-gradient(135deg, #00B894, #00CEC9);
+}
+
+.dice {
+  background: linear-gradient(135deg, #E84393, #FD79A8);
+}
+
+.tech {
+  background: linear-gradient(135deg, #636E72, #2D3436);
+}
+
+.swim {
+  background: linear-gradient(135deg, #81ECEC, #00B894);
+}
+
+.shopping {
+  background: linear-gradient(135deg, #FDCB6E, #E17055);
+}
+
+.video {
+  background: linear-gradient(135deg, #A29BFE, #6C5CE7);
+}
+
+.art {
+  background: linear-gradient(135deg, #FD79A8, #E84393);
+}
+
+.design {
+  background: linear-gradient(135deg, #FDCB6E, #F39C12);
+}
+
+.photo {
+  background: linear-gradient(135deg, #74B9FF, #0984E3);
+}
+
+.chip.selected .movies,
+.chip.selected .cooking,
+.chip.selected .book,
+.chip.selected .music,
+.chip.selected .games,
+.chip.selected .travel,
+.chip.selected .boat,
+.chip.selected .sport,
+.chip.selected .dice,
+.chip.selected .tech,
+.chip.selected .swim,
+.chip.selected .shopping,
+.chip.selected .video,
+.chip.selected .art,
+.chip.selected .design,
+.chip.selected .photo {
+  background: #007AFF;
+}

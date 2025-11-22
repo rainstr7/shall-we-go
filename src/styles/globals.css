@@ -1,0 +1,289 @@
+/* Font Faces */
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/Avenir-Roman.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/Avenir-Book.woff') format('woff');
+  font-weight: 350;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/Avenir-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/Avenir-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/Avenir-Heavy.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/Avenir-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/Avenir-Oblique.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/Avenir-BookOblique.woff') format('woff');
+  font-weight: 350;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/Avenir-LightOblique.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/Avenir-MediumOblique.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/Avenir-HeavyOblique.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir';
+  src: url('/fonts/Avenir-BlackOblique.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* CSS Variables for theming */
+:root {
+  /* Font family */
+  --font-family-primary: 'Avenir', 'Inter', 'SF Pro Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  
+  /* Font weights */
+  --font-weight-light: 300;
+  --font-weight-book: 350;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-heavy: 700;
+  --font-weight-black: 900;
+  
+  /* Border radius */
+  --border-radius-sm: 6px;
+  --border-radius-md: 12px;
+  --border-radius-lg: 20px;
+  --border-radius-xl: 40px;
+  
+  /* Light theme colors */
+  --color-primary-100: #fce7f3;
+  --color-primary-400: #f472b6;
+  --color-primary-600: #db2777;
+  --color-primary-900: #831843;
+  
+  /* Primary gradient colors */
+  --color-primary-gradient-start: #9253FF;
+  --color-primary-gradient-end: #8239FF;
+  
+  --color-secondary-400: #94a3b8;
+  --color-secondary-600: #475569;
+  --color-secondary-800: #1e293b;
+  --color-secondary-200: #e2e8f0;
+  
+  --color-gray-50: #f8fafc;
+  --color-gray-100: #f1f5f9;
+  --color-gray-200: #e2e8f0;
+  --color-gray-400: #94a3b8;
+  --color-gray-500: #64748b;
+  --color-gray-600: #475569;
+  --color-gray-800: #1e293b;
+  
+  --color-pink-500: #ec4899;
+  
+  /* Base colors */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  
+  /* Text colors */
+  --color-text-primary: #171717;
+  --color-text-secondary: #A7A7A7;
+  --color-text-muted: #A8A8A8;
+  --color-text-dark: #1F2937;
+  
+  /* Background colors */
+  --color-bg-light: #F5F5F5;
+  --color-bg-card: #ffffff;
+  --color-bg-input: #F8F9FA;
+  --color-bg-input-hover: #F8F8F8;
+  
+  /* Border colors */
+  --color-border-light: #F2F2F2;
+  --color-border-default: #E5E5E5;
+  --color-border-focus: #9253FF;
+  --color-border-focus-shadow: #9253FF20;
+  
+  /* Status colors */
+  --color-success: #10B981;
+  --color-error: #EF4444;
+  --color-error-light: #FF6B6B;
+  --color-error-dark: #dc2626;
+  --color-error-bg: #fee2e2;
+  --color-error-border: #fca5a5;
+  
+  /* Brand colors */
+  --color-primary: #9253FF;
+  --color-primary-light: #A78BFA;
+  --color-link: #9253FF;
+  
+  /* Wizard colors */
+  --color-wizard-primary: #A776FC;
+  --color-wizard-secondary: #8239FF;
+  --color-wizard-gradient: linear-gradient(242deg, #A776FC 0%, #8239FF 100%);
+  --color-wizard-text-muted: #C6C6C6;
+  --color-wizard-progress-inactive: #EDEDED;
+  
+  /* Interest chip colors */
+  --color-chip-shadow-normal: rgba(163, 163, 163, 0.20);
+  --color-chip-shadow-selected: rgba(255, 203, 211, 0.50);
+  --color-chip-shadow-hover-normal: rgba(163, 163, 163, 0.30);
+  --color-chip-shadow-hover-selected: rgba(255, 203, 211, 0.60);
+  
+  /* Progress bar colors */
+  --color-progress-shadow: rgba(167, 118, 252, 0.4);
+  --color-progress-completed-shadow: rgba(167, 118, 252, 0.3);
+  
+  /* Button shadows */
+  --color-button-shadow: rgba(253, 193, 201, 0.55);
+  --color-button-shadow-hover: rgba(253, 193, 201, 0.65);
+  
+  /* Icon colors */
+  --color-icon-default: #9CA3AF;
+  --color-icon-light: #D0C9D6;
+  --color-icon-active: #ffffff;
+  --color-icon-inactive: rgba(255, 255, 255, 0.45);
+  
+  /* Footer button positioning */
+  --footer-button-margin: auto auto 20px auto;
+  
+  /* Animation variables */
+  --transition-fast: all 0.2s ease-in-out;
+  --transition-medium: all 0.3s ease;
+  --transition-colors: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+  --transition-border: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  --transition-opacity: opacity 0.2s ease;
+  --transition-transform: transform 0.2s ease;
+  
+  /* Transform variables */
+  --transform-hover-up: translateY(-1px);
+  --transform-hover-up-large: translateY(-4px);
+  --transform-rotate-small: rotate(-5deg);
+  --transform-rotate-small-reverse: rotate(5deg);
+  
+  /* Dark theme colors */
+  --color-dark-700: #374151;
+  --color-dark-800: #1f2937;
+  --color-dark-900: #111827;
+}
+
+/* Dark theme overrides */
+[data-theme="dark"] {
+  --color-gray-50: var(--color-dark-900);
+  --color-gray-100: var(--color-gray-800);
+  --color-gray-200: var(--color-dark-700);
+  --color-gray-400: var(--color-gray-500);
+  --color-gray-500: var(--color-gray-400);
+  --color-gray-600: var(--color-gray-400);
+  --color-gray-800: var(--color-gray-100);
+  
+  /* Dark theme UI colors */
+  --color-background-light: var(--color-dark-900);
+  --color-background-card: var(--color-dark-800);
+  --color-text-primary: var(--color-gray-100);
+  --color-text-secondary: var(--color-gray-400);
+  --color-border-light: var(--color-dark-700);
+  --color-input-background: var(--color-dark-700);
+  --color-input-border: var(--color-dark-600);
+  --color-label: var(--color-primary-gradient-start);
+}
+
+/* Base styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-weight: var(--font-weight-regular);
+}
+
+/* Utility classes */
+.transition-colors {
+  transition: var(--transition-colors);
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+/* Gradient utility */
+.primary-gradient {
+  background: linear-gradient(46deg, var(--color-primary-gradient-start) 0%, var(--color-primary-gradient-end) 100%);
+}
+
+/* Animation keyframes */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}

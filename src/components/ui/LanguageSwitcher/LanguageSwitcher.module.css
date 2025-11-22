@@ -1,0 +1,49 @@
+.switcher {
+  display: flex;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 4px;
+  backdrop-filter: blur(10px);
+}
+
+.button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 6px;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: var(--transition-fast);
+}
+
+.button:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.button.active {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Темная тема */
+[data-theme="dark"] .switcher {
+  background: rgba(0, 0, 0, 0.3);
+}
+
+[data-theme="dark"] .button {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+[data-theme="dark"] .button:hover {
+  color: white;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .button.active {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+}

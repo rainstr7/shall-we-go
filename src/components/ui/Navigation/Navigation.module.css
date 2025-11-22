@@ -1,0 +1,32 @@
+.navigation {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-top: 1px solid var(--color-gray-100);
+  display: flex;
+  justify-content: space-around;
+  padding: 1rem;
+  transition: var(--transition-colors);
+}
+
+.navItem {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: var(--transition-colors);
+}
+
+.navItem:hover {
+  background-color: var(--color-gray-100);
+}
+
+[data-theme="dark"] .navigation {
+  background-color: var(--color-dark-800);
+  border-color: var(--color-dark-700);
+}
+
+[data-theme="dark"] .navItem:hover {
+  background-color: var(--color-dark-700);
+}

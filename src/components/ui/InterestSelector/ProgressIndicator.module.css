@@ -1,0 +1,23 @@
+.container {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: auto;
+  margin-bottom: 100px;
+}
+
+.dot {
+  width: 24px;
+  height: 4px;
+  border-radius: 2px;
+  background: #E5E5E5;
+  transition: background-color 0.2s ease;
+}
+
+.dot.completed {
+  background: #8B5CF6;
+}
+
+.dot.current {
+  background: #8B5CF6;
+}

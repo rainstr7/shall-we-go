@@ -1,0 +1,230 @@
+/* Контейнерный стиль для инпутов с иконками */
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label {
+  color: var(--color-link);
+  font-size: 10px;
+  font-family: Avenir;
+  font-weight: 600;
+  line-height: 15px;
+  text-transform: uppercase;
+}
+
+.inputContainer {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: var(--color-bg-input);
+  border-radius: var(--border-radius-md);
+  padding: 0 16px;
+  min-height: 48px;
+  transition: var(--transition-border);
+}
+
+.inputContainer:hover .eyeIcon {
+  opacity: 1;
+}
+
+.iconLeft {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  color: var(--color-text-secondary);
+}
+
+.iconRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  cursor: pointer;
+  transition: var(--transition-opacity);
+  color: var(--color-icon-default);
+}
+
+.iconRight:hover {
+  opacity: 0.7;
+}
+
+.iconRight.initial {
+  color: var(--color-text-muted);
+}
+
+.iconRight.success {
+  color: var(--color-primary);
+}
+
+.iconRight.error {
+  color: var(--color-error);
+}
+
+.eyeIcon {
+  opacity: 0;
+  transition: var(--transition-opacity);
+}
+
+/* Глаз появляется при наведении на контейнер */
+.inputContainer:hover .eyeIcon {
+  opacity: 1;
+}
+
+/* Глаз появляется если в поле есть текст */
+.inputContainer:has(input:not(:placeholder-shown)) .eyeIcon {
+  opacity: 0.6;
+}
+
+/* При наведении на контейнер с текстом глаз становится полностью видимым */
+.inputContainer:has(input:not(:placeholder-shown)):hover .eyeIcon {
+  opacity: 1;
+}
+
+.eyeIcon:hover {
+  opacity: 1 !important;
+}
+
+.inputContainer .input {
+  flex: 1;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 16px;
+  color: var(--color-text-dark);
+  font-family: inherit;
+  padding: 0;
+}
+
+.inputContainer .input::placeholder {
+  color: var(--color-icon-default);
+}
+
+.inputContainer:focus-within {
+  box-shadow: 0 0 0 2px var(--color-border-focus-shadow);
+}
+
+/* Простой стиль для обычных инпутов */
+.simpleInput {
+  width: 100%;
+  padding: 16px 20px;
+  border: 1px solid var(--color-border-default);
+  border-radius: 12px;
+  font-size: 16px;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  color: var(--color-text-primary);
+  background-color: white;
+  transition: var(--transition-border);
+  outline: none;
+}
+
+.simpleInput::placeholder {
+  color: var(--color-text-secondary);
+  font-weight: var(--font-weight-regular);
+}
+
+.simpleInput:focus {
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 3px rgba(146, 83, 255, 0.1);
+}
+
+.simpleInput:disabled {
+  background-color: var(--color-bg-input-hover);
+  color: var(--color-text-secondary);
+  cursor: not-allowed;
+}
+
+.simpleInput:invalid {
+  border-color: var(--color-error-light);
+}
+
+.simpleInput:invalid:focus {
+  box-shadow: 0 0 0 3px rgba(255, 107, 107, 0.1);
+}
+
+/* Error state */
+.error {
+  border-color: var(--color-error-dark);
+}
+
+.error:focus {
+  border-color: var(--color-error-dark);
+  box-shadow: 0 0 0 3px rgba(220, 38, 38, 0.1);
+}
+
+.inputContainer.error {
+  box-shadow: 0 0 0 2px rgba(220, 38, 38, 0.2);
+}
+
+/* Dark theme */
+[data-theme="dark"] .simpleInput {
+  background-color: var(--color-dark-800);
+  border-color: var(--color-gray-600);
+  color: var(--color-gray-100);
+}
+
+[data-theme="dark"] .simpleInput::placeholder {
+  color: var(--color-gray-400);
+}
+
+[data-theme="dark"] .simpleInput:focus {
+  border-color: var(--color-border-focus);
+  box-shadow: 0 0 0 3px rgba(146, 83, 255, 0.2);
+}
+
+[data-theme="dark"] .simpleInput:disabled {
+  background-color: var(--color-dark-700);
+  color: var(--color-gray-500);
+}
+
+[data-theme="dark"] .inputContainer {
+  background: var(--color-dark-700);
+}
+
+[data-theme="dark"] .inputContainer .input {
+  color: var(--color-gray-100);
+}
+
+[data-theme="dark"] .inputContainer .input::placeholder {
+  color: var(--color-gray-400);
+}
+
+[data-theme="dark"] .label {
+  color: var(--color-link);
+}
+
+/* Dark theme error state */
+[data-theme="dark"] .simpleInput.error {
+  border-color: var(--color-error);
+}
+
+[data-theme="dark"] .simpleInput.error:focus {
+  border-color: var(--color-error);
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.2);
+}
+
+[data-theme="dark"] .inputContainer.error {
+  box-shadow: 0 0 0 2px rgba(239, 68, 68, 0.3);
+}
+
+.fieldError {
+  color: var(--color-error);
+  font-size: 12px;
+  font-weight: var(--font-weight-regular);
+  min-height: 16px;
+  animation: fadeInError 0.3s ease-out;
+}
+
+@keyframes fadeInError {
+  from {
+    opacity: 0;
+    transform: var(--transform-hover-up-large);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,198 @@
+.container {
+  width: 414px;
+  min-height: 896px;
+  position: relative;
+  border-radius: var(--border-radius-xl);
+  margin: 0 auto;
+  background: var(--color-bg-light);
+}
+
+.backgroundImage {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('/images/auth/reg-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.registerCard {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 66%;
+  background: var(--color-bg-card);
+  border-radius: var(--border-radius-xl) var(--border-radius-xl) 0 0;
+  padding: 32px 24px 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Коллаж изображений */
+.imageCollage {
+  position: relative;
+  width: 200px;
+  height: 120px;
+  margin-bottom: 32px;
+}
+
+.imageLeft {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #FF6B6B, #FF8E53);
+  border-radius: 20px;
+  transform: rotate(-5deg);
+  z-index: 1;
+}
+
+.imageCenter {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(135deg, #4ECDC4, #44A08D);
+  border-radius: 22px;
+  z-index: 3;
+}
+
+.imageRight {
+  position: absolute;
+  right: 0;
+  top: 25px;
+  width: 75px;
+  height: 75px;
+  background: linear-gradient(135deg, #FFE066, #FF8E53);
+  border-radius: 18px;
+  transform: rotate(5deg);
+  z-index: 2;
+}
+
+/* Приветствие */
+.welcomeSection {
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.titleContainer {
+  display: inline-block;
+  position: relative;
+}
+
+.title {
+  color: var(--color-text-primary);
+  font-size: 30px;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-black);
+  line-height: 32px;
+  word-wrap: break-word;
+  margin: 0 0 8px 0;
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+}
+
+.statusBar {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  height: 11px;
+  background: var(--color-border-light);
+  border-radius: var(--border-radius-sm);
+}
+
+.welcomeSubtitle {
+  font-size: 16px;
+  color: var(--color-text-secondary);
+  margin: 0;
+  font-family: var(--font-family-primary);
+}
+
+/* Форма */
+.form {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Кнопка регистрации */
+.buttonSection {
+  width: 100%;
+  max-width: 320px;
+  margin-bottom: 24px;
+}
+
+.registerButton {
+  width: 100%;
+  min-height: 48px;
+}
+
+/* Ссылка на логин */
+.loginText {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  align-items: center;
+  justify-content: center;
+}
+
+.haveAccount {
+  color: var(--color-text-secondary);
+  font-size: 15px;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-regular);
+  line-height: 20px;
+  word-wrap: break-word;
+}
+
+.loginLink {
+  color: var(--color-link);
+  font-size: 15px;
+  font-family: var(--font-family-primary);
+  font-weight: var(--font-weight-black);
+  line-height: 20px;
+  word-wrap: break-word;
+  cursor: pointer;
+  transition: var(--transition-opacity);
+}
+
+.loginLink:hover {
+  opacity: 0.8;
+}
+
+.errorMessage {
+  padding: 12px;
+  background-color: #fee2e2;
+  border: 1px solid #fca5a5;
+  border-radius: 8px;
+  color: #dc2626;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+
+/* Responsive design */
+@media (max-width: 414px) {
+  .container {
+    width: 100vw;
+    height: 100vh;
+    border-radius: 0;
+  }
+
+  .registerCard {
+    border-radius: 20px 20px 0 0;
+  }
+}

@@ -1,0 +1,199 @@
+/* Main container styles */
+.container {
+  min-height: 100vh;
+  background-color: var(--color-gray-50);
+  transition: background-color 0.2s ease-in-out;
+}
+
+.mainWrapper {
+  max-width: 448px; /* max-w-md equivalent */
+  margin: 0 auto;
+  background-color: white;
+  min-height: 100vh;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* Header styles */
+.header {
+  background-color: white;
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--color-gray-100);
+  transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out;
+}
+
+.headerContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: var(--font-weight-heavy);
+  color: var(--color-gray-800);
+  transition: color 0.2s ease-in-out;
+}
+
+.headerControls {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.viewToggleButton {
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+.viewToggleButtonActive {
+  background-color: var(--color-primary-100);
+  color: var(--color-primary-600);
+}
+
+.viewToggleButtonInactive {
+  color: var(--color-secondary-600);
+}
+
+.viewToggleButtonInactive:hover {
+  color: var(--color-secondary-800);
+}
+
+/* Main content styles */
+.mainContent {
+  flex: 1;
+  padding: 1.5rem;
+  padding-bottom: 5rem;
+}
+
+.eventsList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Map placeholder styles */
+.mapPlaceholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24rem;
+  text-align: center;
+}
+
+.mapIcon {
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--color-gray-200);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.mapIconSvg {
+  width: 3rem;
+  height: 3rem;
+  color: var(--color-gray-400);
+}
+
+.mapTitle {
+  font-size: 1.25rem;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-gray-800);
+  margin-bottom: 0.5rem;
+  transition: color 0.2s ease-in-out;
+}
+
+.mapDescription {
+  color: var(--color-gray-500);
+  transition: color 0.2s ease-in-out;
+}
+
+/* Loading styles */
+.loadingContainer {
+  min-height: 100vh;
+  background-color: var(--color-gray-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loadingContent {
+  text-align: center;
+}
+
+.loadingSpinner {
+  width: 4rem;
+  height: 4rem;
+  border: 4px solid var(--color-pink-500);
+  border-top-color: transparent;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 0 auto 1rem;
+}
+
+.loadingText {
+  color: var(--color-gray-600);
+  transition: color 0.2s ease-in-out;
+}
+
+/* Dark theme overrides */
+[data-theme="dark"] .container {
+  background-color: var(--color-dark-900);
+}
+
+[data-theme="dark"] .mainWrapper {
+  background-color: var(--color-dark-800);
+}
+
+[data-theme="dark"] .header {
+  background-color: var(--color-dark-800);
+  border-color: var(--color-dark-700);
+}
+
+[data-theme="dark"] .title {
+  color: var(--color-gray-100);
+}
+
+[data-theme="dark"] .viewToggleButtonActive {
+  background-color: var(--color-primary-900);
+  color: var(--color-primary-400);
+}
+
+[data-theme="dark"] .viewToggleButtonInactive {
+  color: var(--color-secondary-400);
+}
+
+[data-theme="dark"] .viewToggleButtonInactive:hover {
+  color: var(--color-secondary-200);
+}
+
+[data-theme="dark"] .mapIcon {
+  background-color: var(--color-dark-700);
+}
+
+[data-theme="dark"] .mapIconSvg {
+  color: var(--color-gray-500);
+}
+
+[data-theme="dark"] .mapTitle {
+  color: var(--color-gray-200);
+}
+
+[data-theme="dark"] .mapDescription {
+  color: var(--color-gray-400);
+}
+
+[data-theme="dark"] .loadingContainer {
+  background-color: var(--color-dark-900);
+}
+
+[data-theme="dark"] .loadingText {
+  color: var(--color-gray-400);
+}
